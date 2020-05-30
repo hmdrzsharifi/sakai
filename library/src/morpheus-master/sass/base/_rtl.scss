@@ -3,7 +3,8 @@
 html[dir="rtl"]{
 
 	overflow-x: hidden;
-
+	font-family: Tahoma;
+	font-size: larger;
 	.#{$namespace}siteHierarchy{
 		.#{$namespace}hierarchy--separator{
 			transform: rotate(180deg);
