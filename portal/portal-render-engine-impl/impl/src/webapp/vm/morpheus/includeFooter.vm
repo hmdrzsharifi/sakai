@@ -47,11 +47,11 @@
                 <ul id="Mrphs-footer--poweredBy">
 
                     #foreach ( $pb in $bottomNavPoweredBy )
-                    <li>
+                   #* <li>
                         <a href="${pb.poweredByUrl}" target="_blank" class="external__link">
                             <img class="Mrphs-footer--poweredby__image" src="${pb.poweredByImage}" alt="${pb.poweredByAltText}" /><span class="skip external">(${rloader.site_newwindow})</span>
                         </a>
-                    </li>
+                    </li>*#
                     #end ## END of FOREACH ( $pb in $bottomNavPoweredBy )
 
                 </ul>
