@@ -53,6 +53,13 @@
          <artifactId>sakai-kernel-util</artifactId>
       </dependency>
 
+<!--datepicker-->
+       <dependency>
+           <groupId>com.googlecode.wicket-jquery-ui</groupId>
+           <artifactId>wicket-jquery-ui</artifactId>
+           <version>8.8.0</version>
+       </dependency>
+
    </dependencies>
    
 

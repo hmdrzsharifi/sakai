@@ -49,6 +49,9 @@ import org.sakaiproject.acadtermmanage.tool.util.ComparatorFactory;
 import org.sakaiproject.acadtermmanage.tool.wicketstuff.ActionLink;
 import org.sakaiproject.acadtermmanage.tool.wicketstuff.ActionPanel;
 
+import com.googlecode.wicket.jquery.ui.form.datepicker.DatePicker;
+
+
 import lombok.extern.slf4j.Slf4j;
 // TODO fromDate must not be after startDate => validator
 @Slf4j
@@ -153,9 +156,12 @@ public class SemesterPage extends BasePage implements AcademicTermConstants{
 	        super(id, new CompoundPropertyModel<Semester>(sem));
 	        add(new RequiredTextField<String>(PROP_EID));
 	        add(new TextField<String>(PROP_TITLE));
-	        add(new TextField(PROP_START));
-	        add(new TextField(PROP_END));
-	        add(new TextField<String>(PROP_DESC){
+//	        add(new TextField(PROP_START));
+			add(new DatePicker(PROP_START));
+//			add(new TextField(PROP_END));
+			add(new DatePicker(PROP_END));
+
+			add(new TextField<String>(PROP_DESC){
 	       
 				private static final long serialVersionUID = 1L;
 
