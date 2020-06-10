@@ -1,3 +1,25 @@
+$fa-sass-asset-helper: false !default;
+
+$fa-font-path: if($fa-sass-asset-helper, "font-awesome/", "fonts/font-awesome/") !default;
+
+@font-face {
+	font-family: 'Yekan';
+	src: url('#{$fa-font-path}/Yekan.eot');
+	src: url('#{$fa-font-path}/Yekan.eot?#iefix') format('embedded-opentype'),
+	url('#{$fa-font-path}/Yekan.woff2') format('woff2'),
+	url('#{$fa-font-path}/Yekan.woff') format('woff'),
+	url('#{$fa-font-path}/Yekan.ttf') format('truetype'),
+	url('#{$fa-font-path}/Yekan.svg#Yekan') format('svg');
+	//  src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	font-family: 'Yekan';
+	font-size: medium;
+}
+
 .#{$namespace}pageColumns--single {
 	.#{$namespace}toolTitleNav__button_container {
 		@include display-flex;
